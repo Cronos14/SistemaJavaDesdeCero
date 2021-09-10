@@ -1,11 +1,7 @@
 package com.javadesdecero.sistema;
 
 public class Escuela {
-
-    public Escuela() {
-
-    }
-
+    
     public Grupo iniciarGrupo() {
 
         Materia materiaMate = new Materia(
