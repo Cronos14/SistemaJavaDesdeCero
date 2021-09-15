@@ -1,5 +1,7 @@
 package com.javadesdecero.sistema;
 
+import com.javadesdecero.sistema.alumnos.Alumno;
+
 public class Escuela {
     
     public Grupo iniciarGrupo() {
@@ -36,7 +38,8 @@ public class Escuela {
                 "M"
         );
 
-        alumnoWan.materias = materias;
+        alumnoWan.setEdad(-5);
+        alumnoWan.setMaterias(materias);
 
         Alumno alumnoJesus = new Alumno(
                 "Jesus",
@@ -45,7 +48,7 @@ public class Escuela {
                 "M"
         );
 
-        alumnoJesus.materias = materias;
+        alumnoJesus.setMaterias(materias);
 
         Materia[] materiasExtra = new Materia[4];
         materiasExtra[0] = materiaMate;
@@ -60,7 +63,7 @@ public class Escuela {
                 "F"
         );
 
-        alumnoSilvia.materias = materiasExtra;
+        alumnoSilvia.setMaterias(materiasExtra);
 
         Alumno[] alumnos = new Alumno[3];
 
