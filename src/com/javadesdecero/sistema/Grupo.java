@@ -1,5 +1,7 @@
 package com.javadesdecero.sistema;
 
+import com.javadesdecero.sistema.alumnos.Alumno;
+
 public class Grupo {
     String nombre;
     Alumno[] alumnos;

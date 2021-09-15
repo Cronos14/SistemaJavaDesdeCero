@@ -1,5 +1,7 @@
 package com.javadesdecero.sistema;
 
+import com.javadesdecero.sistema.alumnos.Alumno;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -11,11 +13,11 @@ public class Principal {
         for (int i = 0; i < grupo.alumnos.length; i++) {
 
             Alumno alumno = grupo.alumnos[i];
-            String nombre = alumno.nombre;
+            String nombre = alumno.getNombre();
 
             System.out.println("alumno "+i+ " "+nombre);
 
-            Materia[] materiasAlumno = alumno.materias;
+            Materia[] materiasAlumno = alumno.getMaterias();
 
             for (int j = 0; j < materiasAlumno.length; j++) {
 
