@@ -1,23 +1,19 @@
 package com.javadesdecero.sistema.alumnos;
 
 import com.javadesdecero.sistema.Materia;
+import com.javadesdecero.sistema.Persona;
 
-public class Alumno {
-    private String nombre;
+public class Alumno extends Persona {
     private int numeroLista;
-    private int edad;
     private int grado;
     private String matricula;
     private String turno;
-    private String sexo;
     private String nivel;
     private Materia[] materias;
 
-    public Alumno(String nombre, String matricula, int edad, String sexo) {
-        this.nombre = nombre;
+    public Alumno(int edad, String nombre, String ocupacion, String sexo, String matricula) {
+        super(edad, nombre, ocupacion, sexo);
         this.matricula = matricula;
-        this.edad = edad;
-        this.sexo = sexo;
     }
 
     public int getEdad() {
