@@ -32,20 +32,22 @@ public class Escuela {
         materias[2] = materiaProgramacion;
 
         Alumno alumnoWan = new Alumno(
+                30,
                 "Manuel",
                 "1234ABC",
-                30,
-                "M"
+                "M",
+                "Estudiante"
         );
 
         alumnoWan.setEdad(-5);
         alumnoWan.setMaterias(materias);
 
         Alumno alumnoJesus = new Alumno(
+                31,
                 "Jesus",
                 "5678ABC",
-                31,
-                "M"
+                "M",
+                "Estudiante"
         );
 
         alumnoJesus.setMaterias(materias);
@@ -57,10 +59,11 @@ public class Escuela {
         materiasExtra[3] = materiaIngles;
 
         Alumno alumnoSilvia = new Alumno(
+                28,
                 "Silvia",
                 "3586ABC",
-                28,
-                "F"
+                "F",
+                "Estudiante"
         );
 
         alumnoSilvia.setMaterias(materiasExtra);
