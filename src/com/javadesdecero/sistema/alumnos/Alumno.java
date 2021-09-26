@@ -3,6 +3,8 @@ package com.javadesdecero.sistema.alumnos;
 import com.javadesdecero.sistema.Materia;
 import com.javadesdecero.sistema.Persona;
 
+import java.util.Arrays;
+
 public class Alumno extends Persona {
     private int numeroLista;
     private int grado;
@@ -14,6 +16,21 @@ public class Alumno extends Persona {
     public Alumno(int edad, String nombre, String ocupacion, String sexo, String matricula) {
         super(edad, nombre, ocupacion, sexo);
         this.matricula = matricula;
+    }
+
+    public Materia verMateria(Alumno alumno) {
+
+        Materia materiaAlumno = null;
+        Materia[] materiasAlumno = alumno.getMaterias();
+        String nombre = alumno.getNombre();
+        System.out.println("alumno "+ nombre);
+
+        for (int i = 0; i < materiasAlumno.length; i++) {
+            materiaAlumno = materiasAlumno[i];
+            System.out.println("materia: "+ materiaAlumno.getNombre());
+        }
+        System.out.println("metodo verMateria() ejecutado");
+        return materiaAlumno;
     }
 
     public int getEdad() {
@@ -90,5 +107,17 @@ public class Alumno extends Persona {
 
     public void setMaterias(Materia[] materias) {
         this.materias = materias;
+    }
+
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "numeroLista=" + numeroLista +
+                ", grado=" + grado +
+                ", matricula='" + matricula + '\'' +
+                ", turno='" + turno + '\'' +
+                ", nivel='" + nivel + '\'' +
+                ", materias=" + Arrays.toString(materias) +
+                '}';
     }
 }

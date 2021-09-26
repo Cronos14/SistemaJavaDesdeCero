@@ -78,7 +78,8 @@ public class Escuela {
                 "Grupo A",
                 alumnos
         );
-
         return grupoA;
     }
+
+
 }
