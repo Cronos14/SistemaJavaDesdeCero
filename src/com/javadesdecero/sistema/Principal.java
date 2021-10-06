@@ -7,12 +7,13 @@ public class Principal {
 
         Escuela escuela = new Escuela();
         Grupo grupo = escuela.iniciarGrupo();
+        Alumno alumno = null;
 
         System.out.println(grupo.nombre);
 
         for (int i = 0; i < grupo.alumnos.length; i++) {
 
-            Alumno alumno = grupo.alumnos[i];
+            alumno = grupo.alumnos[i];
             String nombre = alumno.getNombre();
 
             System.out.println("alumno "+i+ " "+nombre);
@@ -25,13 +26,15 @@ public class Principal {
 
                 System.out.println("materia: "+materiaAlumno.nombre);
             }
+            alumno.verMateria(alumno);
         }
+
     }
 }
 
-//Se necesita un sistema para la gestion de alumnos de la escuela JavaDesdeCero,
-//Este sistema debe de evalular los diferentes alumnos los cuales tienen n cantidad de materias,
-// de igual manera cada alumno debe tener asignado uno grupo y la calificacion de cada materia.
+//Se necesita un sistema para la gestión de alumnos de la escuela JavaDesdeCero,
+//Este sistema debe de evaluar los diferentes alumnos los cuales tienen n cantidad de materias,
+// de igual manera cada alumno debe tener asignado uno grupo y la calificación de cada materia.
 
-//El sistema tambien debe de considerar a profesores que daran ciertas materias, estos profesores
+//El sistema también debe de considerar a profesores que darán ciertas materias, estos profesores
 //tienen que estar asociados a una o varias materias.
