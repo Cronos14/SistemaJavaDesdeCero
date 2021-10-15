@@ -11,7 +11,7 @@ public class Mamifero extends Animal {
 
     @Override
     public void comer() {
-        super.comer();
+//        super.comer();
         System.out.println("Como carne");
     }
 
