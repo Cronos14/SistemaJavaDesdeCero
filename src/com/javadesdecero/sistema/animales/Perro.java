@@ -6,6 +6,11 @@ public class Perro extends Mamifero {
     private String raza;
     private String fiel;
 
+    @Override
+    public void comer() {
+        System.out.println("Como croquetas cualquiera");
+    }
+
     public void acompaniar() {
         System.out.println("Acompaño a las personas");
     }

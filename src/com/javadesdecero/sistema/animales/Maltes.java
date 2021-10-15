@@ -6,4 +6,9 @@ public class Maltes extends Perro{
 
     }
 
+//    @Override
+//    public void comer() {
+//        System.out.println("Como croquetas chiquitas");
+//    }
+
 }
